@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body, 
+html,
+#root {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100%;
+}
+
+
+body, #root {
+  flex-grow: 1;
+}
+
+
+.wide--parent {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100%;
+}
+
+.wide--child {
+  flex-grow: 1;
+}
