@@ -72,7 +72,7 @@ export class HttpBaseClient {
 
 
   /**
-   * Setup current request URL.
+   * Setup Request URL.
    *
    * @param url Request URL.
    */
@@ -141,7 +141,11 @@ export class HttpBaseClient {
 
   /**
    * Make request call with provided configuration.
-   * Return: Promise<Request<ResponseType>>
+   * You need to defined generic types:
+   * 1. RequestType
+   * 2. ResponseType
+   *
+   * Return: Promise<Request<ResponseType>>.
    */
   public makeRequest<RequestType, ResponseType>() {
     // Validate: if service resetted before call

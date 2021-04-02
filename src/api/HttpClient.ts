@@ -8,3 +8,9 @@ export class HttpClient extends HttpBaseClient {
     super(config, new AxiosAgent(config));
   }
 }
+
+
+export default new HttpClient({
+  baseURL: 'https://demo.hearty.club/api/v0',
+  defaultHeaders: { 'Content-Type': 'application/json' },
+});
