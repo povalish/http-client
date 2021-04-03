@@ -11,6 +11,6 @@ export class HttpClient extends HttpBaseClient {
 
 
 export default new HttpClient({
-  baseURL: 'https://demo.hearty.club/api/v0',
+  baseURL: '',
   defaultHeaders: { 'Content-Type': 'application/json' },
 });
